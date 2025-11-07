@@ -1,5 +1,8 @@
 const express = require('express');
 const UsersRoutes = require('./src/routes/UsersRoutes');
+console.log('>>> Testando dotenv:', process.env.DB_NAME, process.env.DB_USER, process.env.DB_HOST);
+
+
 // const VehiclesRoutes = require('./src/routes/VehiclesRoutes');
 // const CitiesRoutes = require('./src/routes/CitiesRoutes');
 // const RefuelsRoutes = require('./src/routes/RefuelsRoutes');
