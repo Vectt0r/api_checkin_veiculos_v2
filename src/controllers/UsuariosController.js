@@ -1,7 +1,6 @@
-const Users = require('../models/Usuarios');
+const Usuarios = require('../models/Usuarios');
 
 exports.getAllUsers = async (req, res) => {
-    console.log("a");
     res.send('Lista de todos os usuários');
 };
 
@@ -9,7 +8,7 @@ exports.createUser = async (req, res) => {
     const { nome, usuario, senha } = req.body;
 
     try {
-        const newUser = await Users.create({
+        const newUser = await Usuarios.create({
             nome,
             usuario,
             senha
